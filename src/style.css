@@ -1,0 +1,125 @@
+body {
+    color: #404040;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.main-header {
+    background-color: black;
+    height: 6em;
+}
+
+.header-branding {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    margin-left: auto;
+}
+
+.nav a {
+    color: white;
+    margin-left: 1em;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+.card {
+    flex: 1 0 500px;
+    box-sizing: border-box;
+    margin: 1rem .25em;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #999;
+    border-radius: 3px;
+}
+
+.card img {
+    object-fit: scale-down;
+    width: 50%;
+    margin: auto;
+}
+
+.card h2 {
+    margin: 0;
+    padding: .5rem;
+}
+
+.card .content {
+    padding: .5rem;
+    font-size: smaller;
+}
+
+.card footer {
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card footer.active {
+    background-color: lightsteelblue;
+}
+
+.price, 
+.status {
+    font-weight: bold;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    padding: .5rem 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: larger;
+}
+
+.button:hover {
+    background-color: #666;
+}
+
+.basket-action {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkout-details {
+    display: none;
+}
+
+.in-basket {
+    display: none;
+}
+
+@media screen and (min-width: 40em) {
+    .card {
+       max-width: calc(50% -  1em);
+    }
+}
+
+@media screen and (min-width: 60em) {
+    .card {
+        max-width: calc(33% - 1em);
+    }
+}
+
+.centered {
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+@media screen and (min-width: 52em) {
+    .centered {
+        max-width: 52em;
+    }
+}

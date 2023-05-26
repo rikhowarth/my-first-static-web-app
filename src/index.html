@@ -1,17 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="icon" href="./favicon.ico" type="image/x-icon"> -->
+  </head>
+  <body>
+    <header class="main-header">
+        <div class="centered">
+            <div class="header-branding">
+                <h1>My Shop</h1>
+                <nav class="nav">
+                    <a href="">About</a>
+                    <a href="">Contacts</a>
+                </nav>
+            </div>
+        </div>
+        
+    </header>
+    <main class="centered">
+        <section>
+            <h2>Productssssssss</h2>
+            <div class="product-list cards">
+                <article class="card" id="product-1">
+                    <header>
+                        <h2>Sony</h2>
+                    </header>    
+                    <img src="./images/headphones-sony.jpg" alt="Sony headphones">
+                    <div class="content">
+                        <p class="description">Black Sony headphones</p>
+                    </div>
+                    <footer>
+                        <div class="basket-action add-to-basket">
+                            <span class="price">£250.00</span>
+                            <button class="button" onclick="addItemToBasket('product-1')">Buy</button>
+                        </div>
+                        <div class="basket-action in-basket">
+                            <span class="status">In basket</span>
+                            <button class="button" onclick="removeItemFromBasket('product-1')">Remove</button>
+                        </div>
+                    </footer>
+                </article>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
-</head>
+                <article class="card" id="product-2">
+                    <header>
+                        <h2>Beats</h2>
+                    </header>    
+                    <img src="./images/headphones-beats.jpg" alt="Beats headphones">
+                    <div class="content">
+                        <p class="description">Red Beats headphones</p>
+                    </div>
+                    <footer>
+                        <div class="basket-action add-to-basket">
+                            <span class="price">£200.00</span>
+                            <button class="button" onclick="addItemToBasket('product-2')">Buy</button>
+                        </div>
+                        <div class="basket-action in-basket">
+                            <span class="status">In basket</span>
+                            <button class="button" onclick="removeItemFromBasket('product-2')">Remove</button>
+                        </div>
+                    </footer>
+                </article>
 
-<body>
-  <main>
-    <h1>Vanilla JavaScript Appses</h1>
-  </main>
-</body>
+                <article class="card" id="product-3">
+                    <header>
+                        <h2>Skullcandy</h2>
+                    </header>    
+                    <img src="./images/headphones-skullcandy.jpg" alt="Skullcandy headphones">
+                    <div class="content">
+                        <p class="description">Black Skullcandy headphones</p>
+                    </div>
+                    <footer>
+                        <div class="basket-action add-to-basket">
+                            <span class="price">£100.00</span>
+                        <button class="button" onclick="addItemToBasket('product-3')">Buy</button>
+                        </div>
+                        <div class="basket-action in-basket">
+                            <span class="status">In basket</span>
+                            <button class="button" onclick="removeItemFromBasket('product-3')">Remove</button>
+                        </div>
+                    </footer>
+                </article>
+            </div>
+        </section>
+        <section>
+            <h2>Checkout</h2>
+            <p class="basket-empty">Your basket is empty</p>
+            <div class="checkout-details">
+                <p>
+                    <span class="basket-item-name"></span> - 
+                    <span class="basket-item-price"></span>
+                </p>
 
+                <div class="checkout-form">
+                    Enter your shipping address
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+	<script src="script.js"></script>
+  </body>
 </html>
